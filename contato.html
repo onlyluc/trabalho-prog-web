@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body {
+            background-color: black; /* Define o fundo preto */
+            color: white;           /* Define a cor do texto como branca */
+            font-family: Arial, sans-serif; /* Adiciona uma fonte padrão para melhor legibilidade */
+        }
+        nav ul {
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding: 0;           /* Remove o espaçamento interno */
+            margin: 0;            /* Remove margens externas */
+            text-align: center;   /* Centraliza os itens horizontalmente */
+            background-color: #333; /* Fundo do menu */
+            padding: 10px 0;      /* Espaçamento no menu */
+        }
+        nav ul li {
+            display: inline;      /* Exibe os itens da lista na horizontal */
+            margin: 0 15px;       /* Espaçamento horizontal entre os links */
+        }
+        nav ul li a {
+            color: white;         /* Define a cor dos links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+            font-size: 1.2em;      /* Ajusta o tamanho da fonte */
+        }
+        nav ul li a:hover {
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse para ficar mais interativo*/
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto; /* Centraliza o formulário na página */
+            background-color: #333; /* Fundo do formulário */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .container h1, .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1.1em;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        input, textarea {
+            background-color: #555;
+            color: white;
+        }
+        textarea {
+            resize: none; /* Remove a possibilidade de redimensionar */
+            height: 40px; /* Ajusta a altura para se igualar às outras caixas */
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Caso deseje entrar em contato comigo, você pode estar preenchendo abaixo e me enviando uma mensagem direta.</h2>
+        <form action="#" method="post">
+            <!-- Campo Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+            
+            <!-- Campo E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br>
+            
+            <!-- Campo Mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea><br>
+            
+            <!-- Botão Enviar -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
